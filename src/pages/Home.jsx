@@ -1,8 +1,12 @@
 import React from "react";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import EmailIcon from '@mui/icons-material/Email';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import HtmlIcon from '@mui/icons-material/Html';
+import CssIcon from '@mui/icons-material/Css';
+import JavascriptIcon from '@mui/icons-material/Javascript';
 import "../styles/Home.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function Home() {
   return (
@@ -19,25 +23,49 @@ function Home() {
       </div>
       <div className="skills">
         <h1> Skills</h1>
-        <ol className="list">
-          <li className="item">
-            <h2> Front-End</h2>
-            <span>
-              ReactJS, Redux, HTML, CSS, React Native, NPM,
-               BootStrap, MaterialUI, TailwindCSS, StyledComponents
-            </span>
-          </li>
-          <li className="item">
-            <h2>Back-End</h2>
-            <span>
-              WIP
-            </span>
-          </li>
-          <li className="item">
-            <h2>Languages</h2>
-            <span>HTML/CSS, JavaScript, Python, TypeScript, Go</span>
-          </li>
-        </ol>
+        <div className="slider">
+        <Slider 
+        dots={false}
+        infinite={true}
+        slidesToShow={3}
+        speed = {300}
+        centerMode= {true}
+        slidesToScroll={1}
+        autoplay={true}
+        autoplaySpeed={2000}
+        >
+        
+       <div> <i class="devicon-html5-plain"></i></div>
+       <div> 
+            <i class="devicon-css3-plain"></i>
+          </div>
+       <div>
+            <i class="devicon-javascript-plain"></i>
+          </div>
+       <div>
+            
+       <i class="devicon-postgresql-plain"></i>
+          
+          </div>
+       <div>
+            <i class="devicon-react-original"></i>
+          </div>
+       <div>
+            <i class="devicon-typescript-plain"></i>
+          </div>
+          <div>
+            <i class="devicon-ruby-plain"></i>
+          </div>
+          <div>
+            <i class="devicon-rails-plain"></i>
+          </div>
+          <div>
+            <i class="devicon-github-original"></i>
+          </div>
+      </Slider>
+      </div>
+
+      
       </div>
     </div>
   );
