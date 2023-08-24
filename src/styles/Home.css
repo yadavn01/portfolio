@@ -4,17 +4,20 @@
     font-family: "Arial", sans-serif;
     color: #3e497a;
   }
-  
+ /* .test {
+ 
+ } */
   .about {
     width: 100%;
     height: calc(100vh - 100px);
     display: flex;
+    background-image: url("/assets/background.png");
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #21325e;
-    color: #f0f0f0;
+      color: #f0f0f0;
+      
   }
   
   .about h2 {
@@ -23,11 +26,12 @@
     color: #e9d35b;
     height: 50px;
   }
-  
-  .about .prompt {
-    width: 40%;
-    font-size: 30px;
-  }
+
+.prompt {
+  font-family: monospace;
+  font-size: 20px;
+
+}
   .prompt svg {
     font-size: 60px;
     margin: 5px;
@@ -35,7 +39,6 @@
   }
   
   .skills {
-    font-size: 35px;
     width: 100%;
     justify-content: center;
     flex-direction: column;
@@ -48,7 +51,7 @@
   
   .slider {
     margin-top: 1rem;
-    font-size: 80px;
+    font-size: 60px;
   }
   
   .list span {
@@ -69,8 +72,13 @@
     .skills {
       text-align: center;
     }
+
     .list {
       padding: 0;
+    }
+
+  .experience {
+    border-top: 1px;
     }
   
 
