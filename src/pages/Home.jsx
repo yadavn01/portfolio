@@ -13,6 +13,7 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
+import Emoji from "../components/Icons/Emoji";
 //background image
 //import background from 'herobg.png';
 
@@ -22,7 +23,10 @@ function Home() {
   return (
     <div className="home">
       <div className="about">
-        <h2> Hi, I'm Naman</h2>
+        <div className="heading"><h2> Hi, I'm Naman</h2>
+        <Emoji symbol="👋" label="Wave hello!" />
+        </div>
+      
         <div className="prompt">
           <p>A web developer with a passion for learning and creating.</p>
           {/* <InstagramIcon></InstagramIcon>
