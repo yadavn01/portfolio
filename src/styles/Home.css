@@ -2,7 +2,7 @@
     width: 100%;
     align-items: center;
     font-family: "Arial", sans-serif;
-    color: #3e497a;
+    background-color: #E8E5E4;
   }
  /* .test {
  
@@ -11,7 +11,7 @@
     width: 100%;
     height: calc(100vh - 100px);
     display: flex;
-    background-image: url("/assets/background.png");
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -29,8 +29,14 @@
 
 .prompt {
   font-family: monospace;
-  font-size: 20px;
-
+  font-size: 2rem;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  color: black;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
 }
   .prompt svg {
     font-size: 60px;
