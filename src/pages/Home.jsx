@@ -47,6 +47,7 @@ function Home() {
         slidesToScroll={1}
         autoplay={true}
         autoplaySpeed={1500}
+        arrows={false} 
         >
         
        <div> <i class="devicon-html5-plain"></i></div>
